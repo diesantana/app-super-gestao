@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class MainController extends Controller
 {
     public function main() {
-        return "Hello Laravel";
+        return view('site.main');
     }
 }
