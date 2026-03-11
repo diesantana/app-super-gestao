@@ -19,3 +19,8 @@ Route::prefix('app')->name('app.')->group(function() {
     Route::get('/products', function() {return 'Tela de produtos';})->name('products');
 });
 
+
+Route::fallback(function() {
+    return "Página não encontrada! <a href='" . route('site.main') . "'>Clique aqui</a>
+    para ir para a página inicial.";
+});
