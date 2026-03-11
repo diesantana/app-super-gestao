@@ -3,6 +3,7 @@
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\MainController;
+use App\Http\Controllers\SupplierController;
 use Illuminate\Support\Facades\Route;
 
 Route::name('site.')->group(function() {
@@ -15,7 +16,7 @@ Route::name('site.')->group(function() {
 
 Route::prefix('app')->name('app.')->group(function() {
     Route::get('/clients', function() {return 'Tela de clientes';})->name('clients');
-    Route::get('/suppliers', function() {return 'Tela de fornecedores';})->name('suppliers');
+    Route::get('/suppliers', [SupplierController::class, 'index'])->name('suppliers');
     Route::get('/products', function() {return 'Tela de produtos';})->name('products');
 });
 
