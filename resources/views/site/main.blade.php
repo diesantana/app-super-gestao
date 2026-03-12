@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+@extends('site.layouts.basico')
 
-<head>
-    <title>Super Gestão - Sobre Nós</title>
-    <meta charset="utf-8">
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-</head>
+@section('titulo', 'Home')
 
-<body>
+@section('conteudo')
     <div class="topo">
 
         <div class="logo">
@@ -71,6 +66,4 @@
             </div>
         </div>
     </div>
-</body>
-
-</html>
+@endsection
