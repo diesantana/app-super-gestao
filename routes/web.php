@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Route;
 Route::name('site.')->group(function() {
     Route::get('/', [MainController::class, 'main'])->name('main');
     Route::get('/contact', [ContactController::class, 'contact'])->name('contact');
+    Route::post('/contact', [ContactController::class, 'contact'])->name('contact');
     Route::get('/about', [AboutController::class, 'about'])->name('about');
     Route::get('/login', function() {return 'Tela de login';})->name('login');
 });
