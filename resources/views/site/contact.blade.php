@@ -11,7 +11,7 @@
 
         <div class="informacao-pagina">
             <div class="contato-principal">
-                <x-form_contato classeBorda='borda-preta'></x-form_contato>
+                <x-form_contato classeBorda='borda-preta' :motivos="$motivos"></x-form_contato>
             </div>
         </div>
     </div>

@@ -30,7 +30,7 @@
                 <h1>Contato</h1>
                 <p>Caso tenha qualquer dúvida por favor entre em contato com nossa equipe pelo formulário abaixo.
                 <p>
-                <x-form_contato classeBorda='borda-branca'></x-form_contato>
+                <x-form_contato classeBorda='borda-preta' :motivos="$motivos"></x-form_contato>
             </div>
         </div>
     </div>
